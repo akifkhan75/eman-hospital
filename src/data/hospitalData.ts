@@ -541,3 +541,4 @@ export const FAQS = [
     a: "We are prominently situated on Main Service Road / Expressway Corridor, Phase 4-A, Islamabad / Rawalpindi, offering ample dedicated patient parking, wheelchair accessibility, and rapid ambulance entry."
   }
 ];
+
