@@ -44,13 +44,13 @@ export default function DrFayazSpotlight() {
         <div className="bg-white rounded-3xl shadow-card border border-brand-100/80 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Left: Doctor Photo & Badges */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 p-8 sm:p-10 flex flex-col items-center justify-between relative">
+            <div className="lg:col-span-5 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950 p-5 sm:p-8 lg:p-10 flex flex-col items-center justify-between relative">
               <div className="absolute top-4 left-4 bg-brand-800/80 backdrop-blur-md text-brand-200 text-xs font-semibold px-3 py-1 rounded-full border border-brand-700 flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                 Verified Specialist
               </div>
 
-              <div className="w-full max-w-sm mt-4 mb-6">
+              <div className="w-full max-w-sm mt-6 mb-6">
                 <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl bg-brand-900 group">
                   <Image
                     src={drFayaz.image}
@@ -76,12 +76,12 @@ export default function DrFayazSpotlight() {
               </div>
 
               {/* Rating & Reviews Bar */}
-              <div className="w-full bg-white/10 backdrop-blur-md rounded-xl p-3.5 border border-white/15 flex items-center justify-between text-white text-xs">
+              <div className="w-full bg-white/10 backdrop-blur-md rounded-xl p-3 border border-white/15 flex flex-wrap items-center justify-between gap-2 text-white text-xs">
                 <div className="flex items-center gap-1 text-amber-400">
                   <Star className="w-4 h-4 fill-amber-400" />
                   <span className="font-bold text-white text-sm">4.9 / 5.0</span>
                 </div>
-                <span className="text-slate-300">420+ Verified Reviews</span>
+                <span className="text-slate-300">420+ Reviews</span>
                 <span className="text-emerald-300 font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> 18+ Yrs Exp
                 </span>
@@ -89,7 +89,7 @@ export default function DrFayazSpotlight() {
             </div>
 
             {/* Right: Detailed Bio, Specialties & Booking Details */}
-            <div className="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
+            <div className="lg:col-span-7 p-6 sm:p-8 lg:p-12 flex flex-col justify-between">
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-100">
                   <div>

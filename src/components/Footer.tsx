@@ -39,19 +39,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
             <a
               href={`tel:${HOSPITAL_INFO.emergencyPhone}`}
-              className="inline-flex items-center gap-2 bg-roseAccent-600 hover:bg-roseAccent-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-roseAccent-600 hover:bg-roseAccent-700 text-white font-bold px-5 sm:px-6 py-3.5 rounded-xl shadow-lg transition-transform hover:-translate-y-0.5 text-xs sm:text-sm text-center"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-4 h-4 shrink-0" />
               <span>Call Emergency: {HOSPITAL_INFO.emergencyPhone}</span>
             </a>
             <Link
               href="/appointments"
-              className="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-5 py-3.5 rounded-xl transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-5 py-3.5 rounded-xl transition-all text-xs sm:text-sm text-center"
             >
-              <Calendar className="w-5 h-5" />
+              <Calendar className="w-4 h-4 shrink-0" />
               <span>Book Appointment</span>
             </Link>
           </div>
@@ -154,6 +154,15 @@ export default function Footer() {
                 >
                   <ChevronRight className="w-3.5 h-3.5 text-roseAccent-400 group-hover:translate-x-1 transition-transform" />
                   <span>Book Doctor Appointment</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/reports"
+                  className="hover:text-white transition-colors flex items-center gap-1.5 group font-medium text-brand-300"
+                >
+                  <ChevronRight className="w-3.5 h-3.5 text-brand-400 group-hover:translate-x-1 transition-transform" />
+                  <span>Online Diagnostic & Lab Reports</span>
                 </Link>
               </li>
               <li>
