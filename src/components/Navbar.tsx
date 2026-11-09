@@ -21,7 +21,6 @@ import {
   MapPin,
   ChevronRight,
   ShieldCheck,
-  BookOpen,
 } from "lucide-react";
 import { HOSPITAL_INFO } from "@/data/hospitalData";
 
@@ -62,7 +61,6 @@ export default function Navbar() {
     { label: "Doctors", href: "/doctors", icon: Users },
     { label: "Facilities", href: "/facilities", icon: Building2 },
     { label: "Lab Reports", href: "/reports", icon: FileText },
-    { label: "Health Blog", href: "/blog", icon: BookOpen },
     { label: "Contact", href: "/contact", icon: MapPin },
   ];
 
